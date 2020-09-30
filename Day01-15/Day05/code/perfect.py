@@ -9,9 +9,10 @@ Date: 2018-03-02
 """
 import time
 import math
-
+x = int(input("enter start point"))
+y = int(input("enter end point"))
 start = time.clock()
-for num in range(1, 10000):
+for num in range(x, y):
     sum = 0
     for factor in range(1, int(math.sqrt(num)) + 1):
         if num % factor == 0:
